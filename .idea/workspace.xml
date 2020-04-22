@@ -6,20 +6,20 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bc1706-9664-43ad-9148-455a04f9e20d" name="Default Changelist" comment="commit" />
+    <list default="true" id="e8bc1706-9664-43ad-9148-455a04f9e20d" name="Default Changelist" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -150,7 +150,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -161,38 +173,46 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="947" y="403" width="268" height="263" key="#Notifications" timestamp="1587539569292">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="947" y="403" width="268" height="263" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1587539569292" />
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587462230025">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587462230025" />
-    <state x="716" y="284" width="497" height="513" key="FileChooserDialogImpl" timestamp="1587539264673">
+    <state x="716" y="284" width="497" height="513" key="FileChooserDialogImpl" timestamp="1587539655871">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="716" y="284" width="497" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1587539264673" />
-    <state x="821" y="417" key="Github.ShareDialog" timestamp="1587539547684">
+    <state x="716" y="284" width="497" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1587539655871" />
+    <state x="821" y="417" key="Github.ShareDialog" timestamp="1587539828038">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="821" y="417" key="Github.ShareDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587539547684" />
-    <state width="1636" height="186" key="GridCell.Tab.0.bottom" timestamp="1587537908437">
+    <state x="821" y="417" key="Github.ShareDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587539828038" />
+    <state x="841" y="222" width="479" height="626" key="Github.UntrackedFilesDialog" timestamp="1587539833144">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1636" height="186" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587537908437" />
-    <state width="1636" height="186" key="GridCell.Tab.0.center" timestamp="1587537908436">
+    <state x="841" y="222" width="479" height="626" key="Github.UntrackedFilesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587539833144" />
+    <state width="818" height="186" key="GridCell.Tab.0.bottom" timestamp="1587539660666">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1636" height="186" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587537908436" />
-    <state width="1636" height="186" key="GridCell.Tab.0.left" timestamp="1587537908436">
+    <state width="818" height="186" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660666" />
+    <state width="818" height="186" key="GridCell.Tab.0.center" timestamp="1587539660665">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1636" height="186" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587537908436" />
-    <state width="1636" height="186" key="GridCell.Tab.0.right" timestamp="1587537908437">
+    <state width="818" height="186" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660665" />
+    <state width="818" height="186" key="GridCell.Tab.0.left" timestamp="1587539660664">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1636" height="186" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587537908437" />
-    <state x="467" y="188" key="SettingsEditor" timestamp="1587462246419">
+    <state width="818" height="186" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660664" />
+    <state width="818" height="186" key="GridCell.Tab.0.right" timestamp="1587539660666">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="467" y="188" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587462246419" />
+    <state width="818" height="186" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660666" />
+    <state x="467" y="188" key="SettingsEditor" timestamp="1587539582594">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="467" y="188" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587539582594" />
     <state x="565" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587539317947">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -201,5 +221,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="730" y="403" width="470" height="275" key="git4idea.rebase.GitRebaseDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587539178282" />
+    <state x="919" y="329" width="324" height="412" key="svn.repositoryBrowser" timestamp="1587539801257">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="919" y="329" width="324" height="412" key="svn.repositoryBrowser/67.27.1853.1053@67.27.1853.1053" timestamp="1587539801257" />
   </component>
 </project>
