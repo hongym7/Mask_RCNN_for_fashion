@@ -28,7 +28,7 @@ import keras
 with open('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/label_descriptions.json', 'r') as file:
     label_desc = json.load(file)
 sample_sub_df = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/sample_submission.csv')
-test_df1 = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_0417_03.csv')
+test_df1 = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_0417_02.csv')
 test_df2 = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_score_1213.csv')
 
 categories_df = pd.DataFrame(label_desc.get('categories'))
@@ -123,7 +123,7 @@ def create_mask(size):
     return masks, images_meta, class_id_list, attr_id_list, masks2, class_id_list2, attr_id_list2
 
 
-def plot_segmented_images(size=1, figsize=(10, 10)):
+def plot_segmented_images(size=1, figsize=(8, 8)):
     # First create masks from given segments
 
     masks, images_meta, class_id_list, attr_id_list, masks2, class_id_list2, attr_id_list2 = create_mask(size)

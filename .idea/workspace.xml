@@ -18,7 +18,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e8bc1706-9664-43ad-9148-455a04f9e20d" name="Default Changelist" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/view_result_with_image_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/view_result_with_image_compare.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,28 @@
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.view_result_with_image_compare">
+  <component name="RunManager" selected="Python.train">
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Mask_RCNN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="view_result_with_image" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mask_RCNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.view_result_with_image_compare" />
         <item itemvalue="Python.view_result_with_image_test" />
         <item itemvalue="Python.view_result_with_image" />
@@ -142,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587539313777</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit">
+      <created>1587540093689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587540093689</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +181,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -193,30 +228,30 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="841" y="222" width="479" height="626" key="Github.UntrackedFilesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587539833144" />
-    <state width="818" height="186" key="GridCell.Tab.0.bottom" timestamp="1587539660666">
+    <state width="914" height="315" key="GridCell.Tab.0.bottom" timestamp="1587608176845">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="818" height="186" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660666" />
-    <state width="818" height="186" key="GridCell.Tab.0.center" timestamp="1587539660665">
+    <state width="914" height="315" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587608176845" />
+    <state width="914" height="315" key="GridCell.Tab.0.center" timestamp="1587608176844">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="818" height="186" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660665" />
-    <state width="818" height="186" key="GridCell.Tab.0.left" timestamp="1587539660664">
+    <state width="914" height="315" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587608176844" />
+    <state width="914" height="315" key="GridCell.Tab.0.left" timestamp="1587608176844">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="818" height="186" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660664" />
-    <state width="818" height="186" key="GridCell.Tab.0.right" timestamp="1587539660666">
+    <state width="914" height="315" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587608176844" />
+    <state width="914" height="315" key="GridCell.Tab.0.right" timestamp="1587608176844">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="818" height="186" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587539660666" />
+    <state width="914" height="315" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587608176844" />
     <state x="467" y="188" key="SettingsEditor" timestamp="1587539582594">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="467" y="188" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587539582594" />
-    <state x="565" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587539317947">
+    <state x="565" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587540095358">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="565" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1587539317947" />
+    <state x="565" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1587540095358" />
     <state x="730" y="403" width="470" height="275" key="git4idea.rebase.GitRebaseDialog" timestamp="1587539178282">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
