@@ -6,6 +6,15 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
@@ -16,21 +25,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8bc1706-9664-43ad-9148-455a04f9e20d" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/train_attr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/crop_mask.py" afterDir="false" />
+    <list default="true" id="1e6698a5-2d88-471d-ac4d-16376344e6ed" name="Default Changelist" comment="fixup! fixup! Revert &quot;commit&quot;">
+      <change afterPath="$PROJECT_DIR$/train_seg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/coco/coco.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/coco/coco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/crop_mask.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/view_result_with_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/view_result_with_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/view_result_with_image_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/view_result_with_image_compare.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/view_result_with_image_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/view_result_with_image_test.py" afterDir="false" />
     </list>
+    <list id="67b3def8-982d-4732-9044-d0e79d06958d" name="Revert &quot;commit&quot;" comment="Revert &quot;commit&quot;&#10;&#10;This reverts commit fd08acea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +51,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="37a7039f-bd89-41f7-9c3d-df812bcce017" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="hongym7" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Mask_RCNN_for_fashion" />
   </component>
   <component name="ProjectId" id="1aqT3K2ETCoiRcdgrSOh12FHvVb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,7 +80,7 @@
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.view_result_with_image_compare">
+  <component name="RunManager" selected="Python.train_seg">
     <configuration name="inference" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mask_RCNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train_label_fix2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="train_seg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Mask_RCNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,7 +135,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_label_fix2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_seg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train_seg" />
         <item itemvalue="Python.view_result_with_image_compare" />
         <item itemvalue="Python.train_label_fix" />
         <item itemvalue="Python.inference" />
         <item itemvalue="Python.view_result_with_image_test" />
-        <item itemvalue="Python.train_label_fix2" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587609097125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixup! Revert &quot;commit&quot;">
+      <created>1590466873577</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590466873577</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Revert &quot;commit&quot;&#10;&#10;This reverts commit fd08acea">
+      <created>1590467180150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590467180150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +253,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
               <option name="FILTERS">
@@ -247,26 +276,49 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="fixup! Revert &quot;commit&quot;" />
+    <MESSAGE value="Revert &quot;commit&quot;&#10;&#10;This reverts commit fd08acea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;commit&quot;&#10;&#10;This reverts commit fd08acea" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="947" y="403" width="268" height="263" key="#Notifications" timestamp="1587539569292">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="1251" y="403" width="268" height="263" key="#Notifications" timestamp="1590467313650">
+      <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state x="947" y="403" width="268" height="263" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1587539569292" />
+    <state x="1251" y="403" key="#Notifications/67.27.2493.1053@67.27.2493.1053" timestamp="1590467313650" />
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587609512520">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="451" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587609512520" />
+    <state x="868" y="336" width="744" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590467076028">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="868" y="336" width="744" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.2493.1053@67.27.2493.1053" timestamp="1590467076028" />
     <state x="1163" y="276" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590367254006">
       <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state x="1163" y="276" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.2493.1053@67.27.2493.1053" timestamp="1590367254006" />
+    <state x="826" y="101" width="828" height="867" key="CommitChangelistDialog2" timestamp="1590467178758">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="826" y="101" width="828" height="867" key="CommitChangelistDialog2/67.27.2493.1053@67.27.2493.1053" timestamp="1590467178758" />
+    <state x="220" y="151" width="1925" height="793" key="DiffContextDialog" timestamp="1590467777150">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="220" y="151" width="1925" height="793" key="DiffContextDialog/67.27.2493.1053@67.27.2493.1053" timestamp="1590467777150" />
     <state x="940" y="284" width="497" height="513" key="FileChooserDialogImpl" timestamp="1590379924157">
       <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state x="716" y="284" width="497" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1587539655871" />
     <state x="940" y="284" key="FileChooserDialogImpl/67.27.2493.1053@67.27.2493.1053" timestamp="1590379924157" />
+    <state x="925" y="403" width="631" height="262" key="Github.CreatePullRequestDialog" timestamp="1590467167478">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="925" y="403" width="631" height="262" key="Github.CreatePullRequestDialog/67.27.2493.1053@67.27.2493.1053" timestamp="1590467167478" />
+    <state x="1061" y="449" width="359" height="171" key="Github.Dialog.Accounts.Choose" timestamp="1590466978693">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="1061" y="449" width="359" height="171" key="Github.Dialog.Accounts.Choose/67.27.2493.1053@67.27.2493.1053" timestamp="1590466978693" />
     <state x="821" y="417" key="Github.ShareDialog" timestamp="1587539828038">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -275,29 +327,29 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="841" y="222" width="479" height="626" key="Github.UntrackedFilesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587539833144" />
-    <state width="2101" height="204" key="GridCell.Tab.0.bottom" timestamp="1590459305963">
+    <state width="1313" height="232" key="GridCell.Tab.0.bottom" timestamp="1590467930435">
       <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state width="1829" height="297" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1590317182285" />
-    <state width="2101" height="204" key="GridCell.Tab.0.bottom/67.27.2493.1053@67.27.2493.1053" timestamp="1590459305963" />
+    <state width="1313" height="232" key="GridCell.Tab.0.bottom/67.27.2493.1053@67.27.2493.1053" timestamp="1590467930435" />
     <state width="2266" height="363" key="GridCell.Tab.0.bottom/67.27.2493.1573@67.27.2493.1573" timestamp="1589696815616" />
-    <state width="2101" height="204" key="GridCell.Tab.0.center" timestamp="1590459305963">
+    <state width="1313" height="232" key="GridCell.Tab.0.center" timestamp="1590467930435">
       <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state width="1829" height="297" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1590317182285" />
-    <state width="2101" height="204" key="GridCell.Tab.0.center/67.27.2493.1053@67.27.2493.1053" timestamp="1590459305963" />
+    <state width="1313" height="232" key="GridCell.Tab.0.center/67.27.2493.1053@67.27.2493.1053" timestamp="1590467930435" />
     <state width="2266" height="363" key="GridCell.Tab.0.center/67.27.2493.1573@67.27.2493.1573" timestamp="1589696815616" />
-    <state width="2101" height="204" key="GridCell.Tab.0.left" timestamp="1590459305963">
+    <state width="1313" height="232" key="GridCell.Tab.0.left" timestamp="1590467930435">
       <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state width="1829" height="297" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1590317182283" />
-    <state width="2101" height="204" key="GridCell.Tab.0.left/67.27.2493.1053@67.27.2493.1053" timestamp="1590459305963" />
+    <state width="1313" height="232" key="GridCell.Tab.0.left/67.27.2493.1053@67.27.2493.1053" timestamp="1590467930435" />
     <state width="2266" height="363" key="GridCell.Tab.0.left/67.27.2493.1573@67.27.2493.1573" timestamp="1589696815616" />
-    <state width="2101" height="204" key="GridCell.Tab.0.right" timestamp="1590459305963">
+    <state width="1313" height="232" key="GridCell.Tab.0.right" timestamp="1590467930435">
       <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state width="1829" height="297" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1590317182285" />
-    <state width="2101" height="204" key="GridCell.Tab.0.right/67.27.2493.1053@67.27.2493.1053" timestamp="1590459305963" />
+    <state width="1313" height="232" key="GridCell.Tab.0.right/67.27.2493.1053@67.27.2493.1053" timestamp="1590467930435" />
     <state width="2266" height="363" key="GridCell.Tab.0.right/67.27.2493.1573@67.27.2493.1573" timestamp="1589696815616" />
     <state width="1764" height="307" key="GridCell.Tab.1.bottom" timestamp="1588755388288">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -321,14 +373,31 @@
     <state x="467" y="188" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587613359459" />
     <state x="605" y="188" key="SettingsEditor/67.27.2493.1053@67.27.2493.1053" timestamp="1589343998035" />
     <state x="605" y="268" key="SettingsEditor/67.27.2493.1573@67.27.2493.1573" timestamp="1589283471232" />
-    <state x="565" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587609099365">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="737" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1590467184357">
+      <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state x="565" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1587609099365" />
+    <state x="737" y="277" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.2493.1053@67.27.2493.1053" timestamp="1590467184357" />
+    <state x="959" y="264" width="437" height="566" key="VcsDiffUtil.ChangesDialog" timestamp="1590467642492">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="959" y="264" width="437" height="566" key="VcsDiffUtil.ChangesDialog/67.27.2493.1053@67.27.2493.1053" timestamp="1590467642492" />
+    <state x="826" y="245" width="819" height="578" key="com.intellij.dvcs.ui.CompareBranchesDialog" timestamp="1590467165773">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="826" y="245" width="819" height="578" key="com.intellij.dvcs.ui.CompareBranchesDialog/67.27.2493.1053@67.27.2493.1053" timestamp="1590467165773" />
+    <state x="220" y="151" width="1925" height="793" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590467777150">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="220" y="151" width="1925" height="793" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/67.27.2493.1053@67.27.2493.1053" timestamp="1590467777150" />
     <state x="923" y="145" width="669" height="783" key="find.popup" timestamp="1589962425210">
       <screen x="67" y="27" width="2493" height="1053" />
     </state>
     <state x="923" y="145" width="669" height="783" key="find.popup/67.27.2493.1053@67.27.2493.1053" timestamp="1589962425210" />
+    <state x="835" y="323" width="810" height="423" key="git4idea.merge.GitPullDialog" timestamp="1590466571478">
+      <screen x="67" y="27" width="2493" height="1053" />
+    </state>
+    <state x="835" y="323" width="810" height="423" key="git4idea.merge.GitPullDialog/67.27.2493.1053@67.27.2493.1053" timestamp="1590466571478" />
     <state x="730" y="403" width="470" height="275" key="git4idea.rebase.GitRebaseDialog" timestamp="1587539178282">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

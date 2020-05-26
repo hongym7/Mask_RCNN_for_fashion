@@ -48,7 +48,7 @@ import mrcnn.model as modellib
 from mrcnn import visualize
 from mrcnn.model import log
 
-glob_list = glob.glob(f'train/fashion20200520T1756/mask_rcnn_fashion_0683.h5')
+glob_list = glob.glob(f'train/fashion20200520T1756/mask_rcnn_fashion_0733.h5')
 
 model_path = glob_list[0] if glob_list else ''
 sample_df = sample_sub_df
@@ -175,4 +175,4 @@ print("Total image results: ", submission_df['ImageId'].nunique())
 print("Missing Images: ", missing_count)
 submission_df.head()
 
-submission_df.to_csv(DATA_DIR/'submission_fashion20200520T1756_683.csv', index=False)
+submission_df.to_csv(DATA_DIR/'submission_fashion20200520T1756_733.csv', index=False)
