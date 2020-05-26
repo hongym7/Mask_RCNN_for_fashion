@@ -28,7 +28,7 @@ import keras
 with open('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/label_descriptions.json', 'r') as file:
     label_desc = json.load(file)
 sample_sub_df = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/sample_submission.csv')
-test_df1 = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_0417_02.csv')
+test_df1 = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_fashion20200520T1756_683.csv')
 test_df2 = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_score_1213.csv')
 
 categories_df = pd.DataFrame(label_desc.get('categories'))
@@ -55,7 +55,7 @@ def create_mask(size):
     images_meta = []
 
     for image_id in image_ids:
-        img = mpimg.imread(f'/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/test1/{image_id}.jpg')
+        img = mpimg.imread(f'/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/test3/{image_id}.jpg')
         images_meta.append({
             'image': img,
             'shape': img.shape,
@@ -123,7 +123,7 @@ def create_mask(size):
     return masks, images_meta, class_id_list, attr_id_list, masks2, class_id_list2, attr_id_list2
 
 
-def plot_segmented_images(size=1, figsize=(8, 8)):
+def plot_segmented_images(size=1, figsize=(10, 10)):
     # First create masks from given segments
 
     masks, images_meta, class_id_list, attr_id_list, masks2, class_id_list2, attr_id_list2 = create_mask(size)
@@ -136,13 +136,13 @@ def plot_segmented_images(size=1, figsize=(8, 8)):
     for idx in range(len(masks)):
         axes[0][idx+1].imshow(images_meta[0]['image'])
         axes[0][idx+1].imshow(masks[idx], alpha=0.75)
-        axes[0][idx+1].set_title(str(class_id_list[idx]) + ' ' + get_label(class_id_list[idx]) + ' \n ' + attr_id_list[idx])
+        axes[0][idx+1].set_title(str(class_id_list[idx]) + ' ' + get_label(class_id_list[idx]) + ' \n ' + str(attr_id_list[idx]))
         axes[0][idx+1].axis('off')
 
     for idx in range(len(masks2)):
         axes[1][idx+1].imshow(images_meta[0]['image'])
         axes[1][idx+1].imshow(masks2[idx], alpha=0.75)
-        axes[1][idx+1].set_title(str(class_id_list2[idx]) + ' ' + get_label(class_id_list2[idx]) + ' \n ' + attr_id_list2[idx])
+        axes[1][idx+1].set_title(str(class_id_list2[idx]) + ' ' + get_label(class_id_list2[idx]) + ' \n ' + str(attr_id_list2[idx]))
         axes[1][idx+1].axis('off')
 
     plt.show()

@@ -61,7 +61,9 @@ COCO_MODEL_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
 # Directory to save logs and model checkpoints, if not provided
 # through the command line argument --logs
 DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
-DEFAULT_DATASET_YEAR = "2014"
+DEFAULT_DATASET_YEAR = "2017"
+
+os.environ["CUDA_VISIBLE_DEVICES"] = '1'
 
 ############################################################
 #  Configurations
@@ -132,6 +134,8 @@ class CocoDataset(utils.Dataset):
         # Add classes
         for i in class_ids:
             self.add_class("coco", i, coco.loadCats(i)[0]["name"])
+            print(i)
+            print(coco.loadCats(i)[0]["name"])
 
         # Add images
         for i in image_ids:
@@ -399,21 +403,26 @@ def evaluate_coco(model, dataset, coco, eval_type="bbox", limit=0, image_ids=Non
 if __name__ == '__main__':
     import argparse
 
+    print('aaaaaaaaaaaaa')
+
     # Parse command line arguments
     parser = argparse.ArgumentParser(
         description='Train Mask R-CNN on MS COCO.')
-    parser.add_argument("command",
+    parser.add_argument("--command",
+                        default='train',
                         metavar="<command>",
-                        help="'train' or 'evaluate' on MS COCO")
-    parser.add_argument('--dataset', required=True,
+                        help="'train' or 'evalubate' on MS COCO")
+    parser.add_argument('--dataset',
                         metavar="/path/to/coco/",
+                        default="/mnt/disk2/dl_data/coco",
                         help='Directory of the MS-COCO dataset')
     parser.add_argument('--year', required=False,
                         default=DEFAULT_DATASET_YEAR,
                         metavar="<year>",
                         help='Year of the MS-COCO dataset (2014 or 2017) (default=2014)')
-    parser.add_argument('--model', required=True,
+    parser.add_argument('--model',
                         metavar="/path/to/weights.h5",
+                        default="../../mask_rcnn_coco.h5",
                         help="Path to weights .h5 file or 'coco'")
     parser.add_argument('--logs', required=False,
                         default=DEFAULT_LOGS_DIR,
@@ -428,7 +437,9 @@ if __name__ == '__main__':
                         metavar="<True|False>",
                         help='Automatically download and unzip MS-COCO files (default=False)',
                         type=bool)
+
     args = parser.parse_args()
+
     print("Command: ", args.command)
     print("Model: ", args.model)
     print("Dataset: ", args.dataset)

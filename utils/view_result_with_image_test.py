@@ -28,7 +28,8 @@ import keras
 with open('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/label_descriptions.json', 'r') as file:
     label_desc = json.load(file)
 sample_sub_df = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/sample_submission.csv')
-test_df = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_0417_03.csv')
+#test_df = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_fashion20200512T1959_116.csv')
+test_df = pd.read_csv('/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/submission_score_1213.csv')
 
 categories_df = pd.DataFrame(label_desc.get('categories'))
 attributes_df = pd.DataFrame(label_desc.get('attributes'))
@@ -54,7 +55,7 @@ def create_mask(size):
     images_meta = []
 
     for image_id in image_ids:
-        img = mpimg.imread(f'/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/test1/{image_id}.jpg')
+        img = mpimg.imread(f'/mnt/disk2/dl_data/imaterialist-fashion-2020-fgvc7/test3/{image_id}.jpg')
         images_meta.append({
             'image': img,
             'shape': img.shape,
@@ -96,7 +97,7 @@ def create_mask(size):
     return masks, images_meta, class_id_list, attr_id_list
 
 
-def plot_segmented_images(size=1, figsize=(10, 10)):
+def plot_segmented_images(size=1, figsize=(9, 9)):
     # First create masks from given segments
     masks, images_meta, class_id_list, attr_id_list = create_mask(size)
 
@@ -106,7 +107,8 @@ def plot_segmented_images(size=1, figsize=(10, 10)):
     for idx in range(len(masks)):
         axes[idx+1].imshow(images_meta[0]['image'])
         axes[idx+1].imshow(masks[idx], alpha=0.75)
-        axes[idx+1].set_title(str(class_id_list[idx]) + ' ' + get_label(class_id_list[idx]) + ' \n ' + attr_id_list[idx])
+        axes[idx+1].set_title(str(class_id_list[idx]) + ' ' + get_label(class_id_list[idx]) + ' \n ' + str(attr_id_list[idx]))
+        #axes[idx + 1].set_title(str(class_id_list[idx]) + ' ' + get_label(class_id_list[idx]))
         axes[idx+1].axis('off')
     plt.show()
 
