@@ -15,7 +15,8 @@ In this competition, we challenge you to develop algorithms that will help with 
 * train.csv
 
 ## Approach
-* Segmentation, Mask R CNN
+* Segmentation - Mask R CNN  
+* Augmentation - imgaug library
 
 ## Result, Segmentation
 1.  
