@@ -14,6 +14,8 @@ In this competition, we challenge you to develop algorithms that will help with 
 * sample_submission.csv
 * train.csv
 
+## Approach
+* Segmentation, Mask R CNN
 
 ## Result, Segmentation
 1.  
