@@ -15,7 +15,7 @@ In this competition, we challenge you to develop algorithms that will help with 
 * train.csv
 
 
-## Result
+## Segmentaiton Result
 1.  
 
     LR = 1e-5
@@ -44,3 +44,5 @@ In this competition, we challenge you to develop algorithms that will help with 
       iaa.Crop(percent=(0.08, 0.15))
     ])
 
+
+## Conclustion
