@@ -32,7 +32,7 @@ In this competition, we challenge you to develop algorithms that will help with 
       iaa.PerspectiveTransform(scale=(0.01, 0.15))
     ])
     
-3.
+3. Best Result
 
     LR = 1e-3
     EPOCHS = [50, 150, 400, 700]
