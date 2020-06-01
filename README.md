@@ -1,7 +1,7 @@
 # Kaggle Competition
 ***  
 
-iMaterialist (Fashion) 2020 at FGVC7
+iMaterialist (Fashion) 2020 at FGVC7  
 Fine-grained segmentation task for fashion and apparel
 
 ## Description
