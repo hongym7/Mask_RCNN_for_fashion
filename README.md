@@ -15,7 +15,7 @@ In this competition, we challenge you to develop algorithms that will help with 
 * train.csv
 
 
-## Segmentaiton Result
+## Result, Segmentation
 1.  
 
     LR = 1e-5
