@@ -8,11 +8,12 @@ Fine-grained segmentation task for fashion and apparel
 In this competition, we challenge you to develop algorithms that will help with an important step towards automatic product detection – to accurately assign segmentations and attribute labels for fashion images.
 
 ## Data
+* train.csv
 * train imageset
 * test imageset
 * label_description_json
 * sample_submission.csv
-* train.csv
+
 
 ## Approach
 * Segmentation - Mask R CNN  
