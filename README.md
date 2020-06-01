@@ -12,4 +12,23 @@ In this competition, we challenge you to develop algorithms that will help with 
 * train.csv
 
 
-## Review
+## Result
+1.  
+
+    LR = 1e-5
+    EPOCHS = [40, 100, 200]
+    augmentation = iaa.Sequential([
+      iaa.Fliplr(0.5),
+      iaa.Crop(percent=(0.08, 0.15))
+    ])
+2.
+
+    LR = 1e-5
+    EPOCHS = [50, 100, 200]
+    augmentation = iaa.Sequential([
+     iaa.Fliplr(0.5),
+     iaa.Cutout(nb_iterations=(1, 4), size=0.2, squared=False),
+     iaa.Crop(percent=(0.08, 0.15)),
+     iaa.PerspectiveTransform(scale=(0.01, 0.15))
+    ])
+
