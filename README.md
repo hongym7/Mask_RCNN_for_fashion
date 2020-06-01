@@ -46,5 +46,6 @@ In this competition, we challenge you to develop algorithms that will help with 
 
 ## To Do
 * LearningRate Warmup : http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf
+* Attributes Multilabel Calssification
 
 ## Conclustion
