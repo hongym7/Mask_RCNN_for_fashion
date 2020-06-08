@@ -23,33 +23,6 @@ In this competition, we challenge you to develop algorithms that will help with 
 
 <img src=/images/result.PNG />
 
-1.  
-
-    LR = 1e-5
-    EPOCHS = [40, 100, 200]
-    augmentation = iaa.Sequential([
-      iaa.Fliplr(0.5),
-      iaa.Crop(percent=(0.08, 0.15))
-    ])
-2.
-
-    LR = 1e-5
-    EPOCHS = [50, 100, 200]
-    augmentation = iaa.Sequential([
-      iaa.Fliplr(0.5),
-      iaa.Cutout(nb_iterations=(1, 4), size=0.2, squared=False),
-      iaa.Crop(percent=(0.08, 0.15)),
-      iaa.PerspectiveTransform(scale=(0.01, 0.15))
-    ])
-    
-3.
-
-    LR = 1e-3
-    EPOCHS = [50, 150, 400, 700]
-    augmentation = iaa.Sequential([
-      iaa.Fliplr(0.5),
-      iaa.Crop(percent=(0.08, 0.15))
-    ])
 
 ## To Do
 * LearningRate Warmup : http://openaccess.thecvf.com/content_CVPR_2019/papers/He_Bag_of_Tricks_for_Image_Classification_with_Convolutional_Neural_Networks_CVPR_2019_paper.pdf
