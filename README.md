@@ -21,7 +21,7 @@ In this competition, we challenge you to develop algorithms that will help with 
 
 ## Result, Segmentation
 
-<img src=/images/result.PNG>
+<img src=/images/result.PNG />
 
 1.  
 
