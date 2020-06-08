@@ -20,6 +20,9 @@ In this competition, we challenge you to develop algorithms that will help with 
 * Augmentation - imgaug library
 
 ## Result, Segmentation
+
+<img src=img/result.png>
+
 1.  
 
     LR = 1e-5
